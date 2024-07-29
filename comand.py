@@ -3,6 +3,8 @@ import os
 # Define the directory structure
 directories = [
     "self_checkout_pipeline",
+    "self_checkout_pipeline/webapp/templates",
+    "self_checkout_pipeline/webapp/static",
     "self_checkout_pipeline/.github/workflows",
     "self_checkout_pipeline/config",
     "self_checkout_pipeline/data/captured_images",
@@ -23,6 +25,10 @@ files = [
     "self_checkout_pipeline/train_model.py",
     "self_checkout_pipeline/evaluate_model.py",
     "self_checkout_pipeline/deploy_model.py",
+    "self_checkout_pipeline/detect_product.py",
+    "self_checkout_pipeline/webapp/app.py",
+    "self_checkout_pipeline/webapp/templates/index.html",
+    "self_checkout_pipeline/webapp/static/styles.css",
     "self_checkout_pipeline/requirements.txt",
     "self_checkout_pipeline/Dockerfile",
     "self_checkout_pipeline/.github/workflows/ci_cd_pipeline.yml",
