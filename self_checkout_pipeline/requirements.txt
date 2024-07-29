@@ -1,0 +1,4 @@
+opencv-python
+tensorflow
+segment-anything
+ray[tune]
