@@ -6,4 +6,4 @@ COPY . /app
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "train_model.py"]
+CMD ["python", "webapp/app.py"]

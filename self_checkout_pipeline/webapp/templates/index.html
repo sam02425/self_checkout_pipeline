@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Self-Checkout System</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h1>Welcome to the Self-Checkout System</h1>
+        <div class="mode-selection">
+            <a href="{{ url_for('checkout') }}" class="btn">Self-Checkout Mode</a>
+            <a href="{{ url_for('login') }}" class="btn">Employee Add-In Mode</a>
+        </div>
+    </body>
+    </html>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-Checkout System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
