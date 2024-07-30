@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Self-Checkout System</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    </head>
-    <body>
-        <h1>Welcome to the Self-Checkout System</h1>
-        <div class="mode-selection">
-            <a href="{{ url_for('checkout') }}" class="btn">Self-Checkout Mode</a>
-            <a href="{{ url_for('login') }}" class="btn">Employee Add-In Mode</a>
-        </div>
-    </body>
-    </html>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-Checkout System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
 </head>
 <body>
-    <h1>Self-Checkout System</h1>
-    <div class="video-container">
-        <img src="{{ url_for('video_feed') }}" alt="Product Detection">
-    </div>
+    <header>
+        <h1>Welcome to the Self-Checkout System</h1>
+    </header>
+    <main>
+        <div class="mode-selection">
+            <a href="#" class="btn" data-mode="checkout">Self-Checkout Mode</a>
+            <a href="#" class="btn" data-mode="employee">Employee Add-In Mode</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Self-Checkout System. All rights reserved.</p>
+    </footer>
 </body>
 </html>
